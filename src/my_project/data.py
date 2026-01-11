@@ -2,6 +2,28 @@ import torch
 import typer
 
 
+class myDataset(torch.utils.data.Dataset):
+    """Custom Dataset for loading corrupt MNIST data."""
+
+    def __init__(self, data_dir: str) -> None:
+        """Initialize the dataset by loading data from the specified directory."""
+        print("Loading data...")
+        self.images = [0,1,2,3,4,5,6,7]
+        self.labels = [0,1,2,3,4,5,6,7]
+        #self.images = torch.load(f"{data_dir}/train_images.pt")
+        #self.labels = torch.load(f"{data_dir}/train_target.pt")
+
+    def __len__(self) -> int:
+        """Return the total number of samples in the dataset."""
+        return len(self.labels)
+
+    def __getitem__(self, idx: int) -> tuple[torch.Tensor, torch.Tensor]:
+        """Retrieve a sample and its corresponding label by index."""
+        image = self.images[idx]
+        label = self.labels[idx]
+        return image, label
+
+
 def normalize(images: torch.Tensor) -> torch.Tensor:
     """Normalize images."""
     #normalizes the images to have zero mean and unit variance. Images are 2d 
