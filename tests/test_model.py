@@ -19,6 +19,8 @@ def test_error_on_wrong_shape():
     with pytest.raises(ValueError, match='Expected each sample to have shape [1, 28, 28]'):
         model(torch.randn(1,1,28,29))
         '''
+
+#This test uses parameterization to test the model with different batch sizes
 @pytest.mark.parametrize("batch_size", [32, 64])
 def test_model(batch_size: int) -> None:
     model = MyAwesomeModel()
