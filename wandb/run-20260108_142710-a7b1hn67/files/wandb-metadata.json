@@ -1,0 +1,37 @@
+{
+  "os": "macOS-14.5-arm64-arm-64bit",
+  "python": "CPython 3.12.11",
+  "startedAt": "2026-01-08T13:27:10.916084Z",
+  "program": "/Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project/src/my_project/train.py",
+  "codePath": "src/my_project/train.py",
+  "codePathLocal": "src/my_project/train.py",
+  "git": {
+    "remote": "https://github.com/WilliamKentoRasmussen/cookie.git",
+    "commit": "638b9e2a4a4da02f7a216e86c900ccbf63bf8e81"
+  },
+  "email": "s245310@dtu.dk",
+  "root": "/Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project",
+  "host": "airtilhewilliam.students.clients.local",
+  "executable": "/Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project/.venv/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "293260050432"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "apple": {
+    "name": "Apple M3",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 10,
+    "memoryGb": 16,
+    "swapTotalBytes": "7516192768",
+    "ramTotalBytes": "17179869184"
+  },
+  "writerId": "ycamh72lmjao9ztgattrvtrfox06e1ad"
+}
