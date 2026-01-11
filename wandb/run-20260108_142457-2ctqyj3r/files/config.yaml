@@ -1,0 +1,53 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            489uxr75er2sgusds9um0kabz4vdfphg:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 10
+                    memoryGb: 16
+                    name: Apple M3
+                    pcpuCores: 4
+                    ramTotalBytes: "17179869184"
+                    swapTotalBytes: "6442450944"
+                codePath: src/my_project/train.py
+                codePathLocal: src/my_project/train.py
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "292179542016"
+                email: s245310@dtu.dk
+                executable: /Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project/.venv/bin/python
+                git:
+                    commit: 638b9e2a4a4da02f7a216e86c900ccbf63bf8e81
+                    remote: https://github.com/WilliamKentoRasmussen/cookie.git
+                host: airtilhewilliam.students.clients.local
+                memory:
+                    total: "17179869184"
+                os: macOS-14.5-arm64-arm-64bit
+                program: /Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project/src/my_project/train.py
+                python: CPython 3.12.11
+                root: /Users/kento/Documents/DTU/Semester04/MLOps/week2/my_cookie_structure_project
+                startedAt: "2026-01-08T13:24:57.270493Z"
+                writerId: 489uxr75er2sgusds9um0kabz4vdfphg
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.23.1
+            "12": 0.23.1
+            "13": darwin-arm64
+epochs:
+    value: 10
+lr:
+    value: 0.01
