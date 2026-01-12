@@ -21,10 +21,10 @@ COPY data/ data/
 #RUN uv sync --frozen
 WORKDIR /
 
-#Mount my local uv cache to the docker image 
+#Mount my local uv cache to the docker image
 ENV UV_LINK_MODE=copy
 RUN --mount=type=cache,target=/root/.cache/uv uv sync
-#RUN uv sync --locked --no-cache --no-install-project 
+#RUN uv sync --locked --no-cache --no-install-project
 
 
 

@@ -26,7 +26,7 @@ class myDataset(torch.utils.data.Dataset):
 
 def normalize(images: torch.Tensor) -> torch.Tensor:
     """Normalize images."""
-    #normalizes the images to have zero mean and unit variance. Images are 2d 
+    #normalizes the images to have zero mean and unit variance. Images are 2d
     return (images - images.mean()) / images.std()
 
 
@@ -53,7 +53,7 @@ def preprocess_data(raw_dir: str, processed_dir: str) -> None:
     #After:  [N, 1, 28, 28]
     train_target = train_target.long()
     test_target = test_target.long() #Converts labels to integer class indices (required for CrossEntropyLoss).
-    
+
 
     train_images = normalize(train_images)
     test_images = normalize(test_images)
