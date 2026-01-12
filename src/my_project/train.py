@@ -81,4 +81,3 @@ if __name__ == "__main__":
     }
     with wandb.init(project=project, config=config) as run:
         typer.run(train)
-        
