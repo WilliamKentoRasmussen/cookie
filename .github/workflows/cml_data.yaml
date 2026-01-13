@@ -1,0 +1,32 @@
+name: CML-data CI (continuous integraiton)
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'data/**'
+    - '**/*.dvc'
+    - '.dvc/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup uv
+      uses: astral-sh/setup-uv@v7
+      with:
+        python-version: 3.12
+
+    - name: Install dependencies
+      run: |
+        uv sync
+
+    - name: (download data before) Runs statistics function on data
+      run: |
+        uv run src/my_project/dataset
+        cml comment create data_statistics.md --watermark-title="Data Checker" # (1)!
